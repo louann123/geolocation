@@ -16,12 +16,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-         stage('test') {
-            steps {
-                echo 'build'
-                sleep 5
-            }
-        }
+         
          stage('test') {
             steps {
                 sh 'mvn test'
